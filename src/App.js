@@ -6,23 +6,23 @@ import Drawer from './components/Drawer';
 
 const arr = [
   {
-    name: 'Мужские Кроссовки Nike Blazer Mid Suede',
+    title: 'Мужские Кроссовки Nike Blazer Mid Suede',
     prise: "12 999",
     img: "/img/sneakers/01.jpg"
   },
   {
-    name: 'Мужские Кроссовки Nike Air Max 270',
+    title: 'Мужские Кроссовки Nike Air Max 270',
     prise: "16 299",
     img: "/img/sneakers/02.jpg"
   },
   {
-    name: 'Мужские Кроссовки Nike Blazer Mid Suede',
+    title: 'Мужские Кроссовки Nike Blazer Mid Suede',
     prise: "8 499",
     img: "/img/sneakers/03.jpg"
   },
   {
 
-    name: 'Кроссовки Puma X Aka Boku Future Rider',
+    title: 'Кроссовки Puma X Aka Boku Future Rider',
     prise: "8 999",
     img: "/img/sneakers/04.jpg"
   },
@@ -77,9 +77,11 @@ function App() {
       <div className="d-flex">
         {arr.map((obj) =>
           <Card
-            name={obj.name}
+            title={obj.title}
             prise={obj.prise}
             img={obj.img}
+            test={12323}
+            onClick={() => alert(5)}
           />
         )}
       </div>
