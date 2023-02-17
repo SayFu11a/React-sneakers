@@ -46,7 +46,7 @@ function Drawer({ onClickClose, onRemuve, cartItem = [], opened }) {
 
             <h2 className="mb-30 d-flex justify-between">
                Корзина
-               <img onClick={onClickClose} className="removeBtn cu-p" src="/img/btn-remove.svg" alt="Close" />
+               <img onClick={onClickClose} className="removeBtn cu-p" src="img/btn-remove.svg" alt="Close" />
             </h2>
 
             {cartItem.length > 0 ? (
@@ -59,7 +59,7 @@ function Drawer({ onClickClose, onRemuve, cartItem = [], opened }) {
                               <p className="mp-5">{obj.title}</p>
                               <b>{obj.price} руб.</b>
                            </div>
-                           <img onClick={() => onRemuve(obj.id)} className="removeBtn" src="/img/btn-remove.svg" alt="Remove" />
+                           <img onClick={() => onRemuve(obj.id)} className="removeBtn" src="img/btn-remove.svg" alt="Remove" />
                         </div>
                      ))}
                   </div>
@@ -81,14 +81,14 @@ function Drawer({ onClickClose, onRemuve, cartItem = [], opened }) {
                      }
                      <button disabled={isLoading} onClick={onClickToOrderButt} className="greenButton">
                         Оформить заказ
-                        <img src="/img/arrow.svg" alt="Arrow" />
+                        <img src="img/arrow.svg" alt="Arrow" />
                      </button>
                   </div>
                </div>
             ) : (
                <Info
                   title={isOrdered ? "Заказ оформлен!" : "Корзина пустая"}
-                  image={isOrdered ? "/img/ordered.jpg" : "/img/empty-cart.jpg"}
+                  image={isOrdered ? "img/ordered.jpg" : "img/empty-cart.jpg"}
                   discription={isOrdered ? `Ваш заказ #${orderId} скоро будет передан курьерской доставке` : "Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ."}
                />
             )}

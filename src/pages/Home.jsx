@@ -30,12 +30,12 @@ function Home({
          <div className="d-flex align-center justify-between mb-40">
             <h1>{searchValue == '' ? 'Все кроссовки' : 'Поиск по запросу: ' + "'" + searchValue + "'"}</h1>
             <div className="serch-block d-flex">
-               <img src="\img\serch.svg" alt="Serch" />
+               <img src="img\serch.svg" alt="Serch" />
                <input onChange={onChangeSearchInput} value={searchValue} type="text" placeholder="Поиск..." />
                {searchValue &&
                   <img className='clear'
                      onClick={() => setSearchValue('')}
-                     src="\img\btn-remove.svg"
+                     src="img\btn-remove.svg"
                      alt="Clear" />}
             </div>
          </div>
